@@ -4,7 +4,7 @@
     <title>Ronaldo Sensation | FW Armenia</title>
     <meta name="charset" content="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="ARS Group, RobArm, Football World Armenia">
+    <meta name="author" content="Armen Minasian, ARS Group, FW Armenia.">
     <style>
       body{
         align-items: center;
@@ -22,13 +22,38 @@
         background-color: lightblue;
         color: darkblue;
       }
+      button{
+        width: 70px;
+        height: 115px;
+        color: white;
+        background-color: blue;
+        transition: all 0.3s ease-in-out;
+      }
+      button:hover{
+        background-color: darkblue;
+      }
     </style>
   </head>
   <body>
+    <br><br><br>
     <br><br><br><img src="./articlepageone.pdf"><br><br><img src="./articlepagetwo.pdf"><br><br><br>
     <a href="../index.html">Back to Home</a><br><br><p class="txt">This article was released 18th of April 2025 by Armen Minasian</p><br><br>
     <footer><br><br>
       <p>&copy; Football World Armenia News. No unauthorized name use.</p><br><br>
     </footer><br><br><br>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+  const login = localStorage.getItem('login');
+        if (login) {
+          let doc = document.getElementById('body');
+          doc.innerHTML = ''
+        }
+        if (!login) {
+          let doc = document.getElementById('body')
+          doc.innerHTML = '<br><br><br><p class="a">You will have to login too see this newspaper.</p><br><br><button onclick="log">Login</button><br><br><br>';
+});
+function log(){
+  window.location.href = 'https://www.fwanews.netlify.app/login.html
+    </script>
   </body>
 </html>
